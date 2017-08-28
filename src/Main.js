@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-  TouchableHighlight, 
+  TouchableOpacity, 
   View, 
   Text, 
   StyleSheet,
@@ -55,21 +55,21 @@ const Main = (props) => {
           value={ 0 }/>
       </View>
       <View style={ styles.controls }>
-        <TouchableHighlight onPress={ () => {} }>
+        <TouchableOpacity onPress={ () => {} }>
           <Icon style={ styles.back } name="ios-skip-backward" size={25} color="#87CEFA" />
-        </TouchableHighlight>
-        <TouchableHighlight onPress={ () => {} }>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={ () => {} }>
           <Icon style={ styles.play } name="ios-play" size={70} color="#87CEFA" />
-        </TouchableHighlight>
-        <TouchableHighlight onPress={ () => {} }>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={ () => {} }>
           <Icon style={ styles.forward } name="ios-skip-forward" size={25} color="#87CEFA" />
-        </TouchableHighlight>
-        <TouchableHighlight onPress={ () => {} }>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={ () => {} }>
           <View>
             <Icon style={ styles.likes } name={ props.playerData.data.is_liked ? "ios-thumbs-up" : "ios-thumbs-up-outline"} size={18} color="#000" />
             <Text style={ styles.likesText }>{props.playerData.data.likes}</Text>
           </View>
-        </TouchableHighlight>
+        </TouchableOpacity>
       </View>
     </View>
   )
